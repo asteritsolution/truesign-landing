@@ -6,86 +6,86 @@
 <body class="stretched">
 
     <style>
-    .grecaptcha-badge {
-        visibility: hidden;
-    }
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
 
-    .has-error .form-control {
-        width: 80% !important;
-    }
+        .has-error .form-control {
+            width: 80% !important;
+        }
 
-    .has-error .text-danger {
-        font-family: 'Arial', sans-serif;
-        margin: 0px;
-        padding: 0px;
-        font-size: small;
-    }
+        .has-error .text-danger {
+            font-family: 'Arial', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            font-size: small;
+        }
     </style>
 
     <script>
-    // Call when Main Lead Form is submitted
-    function onSubmitMainLeadForm(token) {
-        // Check the validity of form
-        let formValid = $("#FormToolsMainLeadForm").valid();
+        // Call when Main Lead Form is submitted
+        function onSubmitMainLeadForm(token) {
+            // Check the validity of form
+            let formValid = $("#FormToolsMainLeadForm").valid();
 
-        // If valid, try to submit form
-        if (formValid) {
-            // Form submit
-            document.getElementById("FormToolsMainLeadForm").submit();
+            // If valid, try to submit form
+            if (formValid) {
+                // Form submit
+                document.getElementById("FormToolsMainLeadForm").submit();
 
-            // Show loader
-            $('.loader').fadeIn();
-        }
-    }
-
-
-    // Call when Author Lead Form is submitted
-    function onSubmitAuthorLeadForm(token) {
-        // Check the validity of form
-        let formValid = $("#FormToolsAuthorLeadForm").valid();
-
-        // If valid, try to submit form
-        if (formValid) {
-            // Form submit
-            document.getElementById("FormToolsAuthorLeadForm").submit();
-
-            // Show loader
-            $('.loader').fadeIn();
+                // Show loader
+                $('.loader').fadeIn();
+            }
         }
 
-    }
 
-    // Call when FreeConsultation Lead Form is submitted
-    function onSubmitFreeConsultationLeadForm(token) {
-        // Check the validity of form
-        let formValid = $("#FormToolsFreeConsultationLeadForm").valid();
+        // Call when Author Lead Form is submitted
+        function onSubmitAuthorLeadForm(token) {
+            // Check the validity of form
+            let formValid = $("#FormToolsAuthorLeadForm").valid();
 
-        // If valid, try to submit form
-        if (formValid) {
-            // Form submit
-            document.getElementById("FormToolsFreeConsultationLeadForm").submit();
+            // If valid, try to submit form
+            if (formValid) {
+                // Form submit
+                document.getElementById("FormToolsAuthorLeadForm").submit();
 
-            // Show loader
-            $('.loader').fadeIn();
+                // Show loader
+                $('.loader').fadeIn();
+            }
+
         }
 
-    }
+        // Call when FreeConsultation Lead Form is submitted
+        function onSubmitFreeConsultationLeadForm(token) {
+            // Check the validity of form
+            let formValid = $("#FormToolsFreeConsultationLeadForm").valid();
 
-    // Call when MiniLead Form is submitted
-    function onSubmitMiniLeadForm(token) {
-        // Check the validity of form
-        let formValid = $("#MiniLeadForm").valid();
+            // If valid, try to submit form
+            if (formValid) {
+                // Form submit
+                document.getElementById("FormToolsFreeConsultationLeadForm").submit();
 
-        // If valid, try to submit form
-        if (formValid) {
-            // Form submit
-            document.getElementById("MiniLeadForm").submit();
+                // Show loader
+                $('.loader').fadeIn();
+            }
 
-            // Show loader
-            $('.loader').fadeIn();
         }
 
-    }
+        // Call when MiniLead Form is submitted
+        function onSubmitMiniLeadForm(token) {
+            // Check the validity of form
+            let formValid = $("#MiniLeadForm").valid();
+
+            // If valid, try to submit form
+            if (formValid) {
+                // Form submit
+                document.getElementById("MiniLeadForm").submit();
+
+                // Show loader
+                $('.loader').fadeIn();
+            }
+
+        }
     </script>
 
 
@@ -93,33 +93,33 @@
     <div id="wrapper" class="clearfix">
 
         <style>
-        html,
-        body {
-            background: #fff;
-        }
+            html,
+            body {
+                background: #fff;
+            }
 
-        .loader {
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 9999;
-        }
+            .loader {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 9999;
+            }
 
-        .loader img {
-            width: 250px;
-        }
+            .loader img {
+                width: 250px;
+            }
 
-        .loader-text-title {
-            color: #fff;
-            font-weight: 500;
-            line-height: 1.3;
-        }
+            .loader-text-title {
+                color: #fff;
+                font-weight: 500;
+                line-height: 1.3;
+            }
         </style>
 
 
@@ -137,14 +137,14 @@
 
 
         <style>
-        #pageloader {
-            top: 0px;
-            left: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.95);
-        }
+            #pageloader {
+                top: 0px;
+                left: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.95);
+            }
         </style>
 
 
@@ -238,7 +238,7 @@
         </div>
 
         <script>
-        window.thankyouPage = "form-submitted-successfully";
+            window.thankyouPage = "form-submitted-successfully";
         </script><!-- Header======================= -->
 
 
@@ -255,6 +255,14 @@
                 </div>
 
                 <div class="row justify-content-center pb-4">
+
+
+                    <div class="col-lg-6 col-md-6 d-lg-flex flex-wrap justify-content-center ml-lg-2 p-4">
+                        <img src="assets/images/slider/self_publishing.png" alt="Self Publishing"
+                            class="d-flex align-self-end">
+                    </div>
+
+
                     <div class="col-lg-4 col-md-5 mt-lg-4">
                         <div class="rounded shadow bg-white py-4 px-4">
                             <div class="form-widget">
@@ -273,30 +281,38 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12 input-group form-group">
-                                        <div class="input-group-prepend"> <span
-                                                class="input-group-text bg-transparent"><i
-                                                    class="icon-line2-user"></i></span> </div>
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="fa-solid fa-user"></i>
+                                            </span>
+                                        </div>
                                         <input type="text" name="name" id="name" class="form-control required"
                                             placeholder="Your Full Name" required autofocus />
                                     </div>
                                     <div class="col-sm-12 input-group form-group">
-                                        <div class="input-group-prepend"> <span
-                                                class="input-group-text bg-transparent"><i
-                                                    class="icon-line2-envelope"></i></span> </div>
+                                        <div class="input-group-prepend"> <span class="input-group-text bg-transparent">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </span>
+                                        </div>
                                         <input type="email" name="email" id="email" class="form-control required"
                                             placeholder="Your Email" required />
                                     </div>
+
                                     <div class="col-sm-12 input-group form-group">
                                         <div class="input-group-prepend"> <span
-                                                class="input-group-text bg-transparent"><i
-                                                    class="icon-line2-call-out"></i></span> </div>
+                                                class="input-group-text bg-transparent">
+                                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
                                         <input type="tel" name="phonenumber" pattern="[6-9]{1}[0-9]{9}" id="phonenumber"
                                             class="form-control" placeholder="Your Phone Number" required />
                                     </div>
                                     <div class="col-sm-12 input-group form-group">
                                         <div class="input-group-prepend"> <span
-                                                class="input-group-text bg-transparent"><i
-                                                    class="icon-money"></i></span> </div>
+                                                class="input-group-text bg-transparent">
+                                                <i class="fa-solid fa-money-bill"></i>
+                                            </span>
+                                        </div>
                                         <select class="form-control required" name="form-cf-74" id="form-cf-74"
                                             required>
                                             <option selected>Your Publishing Budget</option>
@@ -309,18 +325,15 @@
                                     </div>
                                     <div class="col-sm-12 input-group form-group">
                                         <div class="input-group-prepend"> <span
-                                                class="input-group-text bg-transparent"><i
-                                                    class="icon-book2"></i></span> </div>
-                                        <select class="form-control required" name="form-cf-16" id="form-cf-16"
-                                            required>
+                                                class="input-group-text bg-transparent">
+                                                <i class="fa-solid fa-book"></i>
+                                            </span>
+                                        </div>
+                                        <select class="form-control required" name="form-cf-16" id="form-cf-16" required>
                                             <option selected>Your Manuscript Status</option>
-                                            <option value="Want to start the process today.">Want to start the process
-                                                today.</option>
-                                            <option value="Want to start the process within a week.">Want to start the
-                                                process within a week.
-                                            </option>
-                                            <option value="It will take a month to get ready.">It will take a month to
-                                                get ready.</option>
+                                            <option value="Want to start the process today.">Want to start the process today.</option>
+                                            <option value="Want to start the process within a week.">Want to start the process within a week.</option>
+                                            <option value="It will take a month to get ready.">It will take a month to get ready.</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
@@ -343,13 +356,13 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 d-lg-flex flex-wrap justify-content-center ml-lg-2 p-4">
+                    <!-- <div class="col-lg-6 col-md-6 d-lg-flex flex-wrap justify-content-center ml-lg-2 p-4">
                         <img src="assets/images/slider/self_publishing.png" alt="Self Publishing"
                             class="d-flex align-self-end">
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="svg-separator">
+            <!-- <div class="svg-separator">
                 <div>
                     <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                         <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
@@ -398,92 +411,12 @@
                     </svg>
                     <div class="bg-white" style="height: 150px"></div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
-        <div class="section mt-lg-3 " style="background-color: #FFF;">
-            <div class="container">
-                <div class="row align-items-center justify-content-between pb-4 pt-4">
-                    <div class="col-lg-5 parallax pr-lg-6 p-4" data-bottom-top="margin-top:-50px"
-                        data-top-bottom="margin-top:50px">
-                        <div class="heading-block border-bottom-0">
-                            <div class="badge badge-pill badge-default">Who Are We</div>
-                            <h2 class="nott h2 ls0">Most Economical & Trusted Book Publication In India.</h2>
-                        </div>
-                        <p class="text-normal" style="font-size: 16px; text-align: justify;">True Sign Publication
-                            offers the most
-                            affordable self publishing services in India. We aim to provide professional self book
-                            publication
-                            services, guidance and support to all emerging Indian Authors who inspires to write and
-                            publish their book
-                            with our Worldwide Availability on Print & eBook.</p>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="row col-mb-50">
-                            <div class="col-md-6">
-                                <div class="feature-box media-box p-lg-3">
-                                    <div class="fbox-icon position-relative"
-                                        style="background-image: url('assets/images/featured-img/2.jpg');"> <i
-                                            class="icon-line2-printer"></i> </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-semibold">Print</h3>
-                                        <p class="text-normal">We provide unbelievable Print On Demand Lifetime
-                                            Inventory on International
-                                            Print Quality for your books. We provide best POD service for your book.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-box media-box p-lg-3">
-                                    <div class="fbox-icon position-relative"
-                                        style="background-image: url('assets/images/featured-img/3.jpg');"> <i
-                                            class="icon-truck1"></i>
-                                    </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-semibold">Quick Service</h3>
-                                        <p class="text-normal">With quick publishing within 7 to 10 Days only, your book
-                                            will be ready for
-                                            worldwide distribution as print and eBook. We ensure fastest service is
-                                            delivered to you.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-box media-box p-lg-3">
-                                    <div class="fbox-icon position-relative"
-                                        style="background-image: url('assets/images/featured-img/1.jpg');"> <i
-                                            class="icon-handshake1"></i>
-                                    </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-semibold">Support</h3>
-                                        <p class="text-normal">Get a dedicated Project flow while publishing and a
-                                            caring post-publishing
-                                            support once released. You are provided with best in class support
-                                            platforms.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-box media-box p-lg-3">
-                                    <div class="fbox-icon position-relative"
-                                        style="background-image: url('assets/images/featured-img/2.jpg');"> <i
-                                            class="icon-line2-globe"></i>
-                                    </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-semibold">Worldwide Distribution</h3>
-                                        <p class="text-normal">We make your book available in upto 150+ countries as
-                                            paperback and eBook. We
-                                            are in partnership with largest global book distribution networks</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include('include/section/description.php') ?>
 
-        <div class="section" style="background-color: #f9f9f9;">
+        <!-- <div class="section" style="background-color: #f9f9f9;">
             <div class="container">
                 <div class="row justify-content-center pb-4 pt-4">
                     <div class="col-md-10 center">
@@ -582,94 +515,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="section bg-transparent">
-            <div class="container pb-4 pt-4">
-                <div class="heading-block border-bottom-0 center mx-auto">
-                    <div class="heading-block border-bottom-0">
-                        <div class="badge badge-pill badge-default">Pricing</div>
-                        <h2 class="nott h2 ls0">Publishing Packages</h2>
-                    </div>
-                    <p class="text-normal">To Self Publish your book, you may select publishing package here below and
-                        can
-                        register for publishing.
-                        <br>The cost of publishing a book totally depends upon the publishing services you choose.
-                    </p>
-                </div>
-                <div class="container flex center horizontal-center">
-                    <div class="row pricing col-mb-30 no-gutters" style="width: 80%;">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="pricing-box text-center">
-                                <div class="pricing-title text-uppercase title-sm">
-                                    <h3>Starter</h3>
-                                </div>
-                                <div class="pricing-price"> <span class="price-unit">&#8377</span>9,990</div>
-                                <div class="pricing-features">
-                                    <ul>
-                                        <li>Cover and Interior Design</li>
-                                        <li>Proofreading upto 5k Words</li>
-                                        <li>ISBN &amp; Barcode</li>
-                                        <li>Upto 10 Complimentary copies</li>
-                                        <li>Basic Promotion</li>
-                                        <li>Email Support</li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-action px-4"> <a href="pricing"
-                                        class="button button-small button-green">Know
-                                        More</a> </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="pricing-box pricing-highlight text-center">
-                                <div class="pricing-title text-uppercase title-sm">
-                                    <h3>Professional</h3>
-                                    <span>Most Popular</span>
-                                </div>
-                                <div class="pricing-price"> <span class="price-unit">&#8377</span>24,990</div>
-                                <div class="pricing-features">
-                                    <ul>
-                                        <li>Cover and Interior Design</li>
-                                        <li>Proofreading upto 20k Words</li>
-                                        <li>ISBN &amp; Barcode</li>
-                                        <li>Upto 20 Complimentary copies</li>
-                                        <li>Comprehensive Marketing &amp; Promotion</li>
-                                        <li>Priority Support</li>
-                                        <li><i class="icon-star3"></i> <i class="icon-star3"></i> <i
-                                                class="icon-star3"></i> <i class="icon-star3"></i> <i
-                                                class="icon-star3"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-action px-4"> <a href="pricing"
-                                        class="button button-medium border-color">Know
-                                        More</a> </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="pricing-box text-center">
-                                <div class="pricing-title text-uppercase title-sm">
-                                    <h3>Standard</h3>
-                                </div>
-                                <div class="pricing-price"> <span class="price-unit">&#8377</span>15,990</div>
-                                <div class="pricing-features">
-                                    <ul>
-                                        <li>Cover and Interior Design</li>
-                                        <li>Proofreading upto 10k Words</li>
-                                        <li>ISBN &amp; Barcode</li>
-                                        <li>Upto 15 Complimentary copies</li>
-                                        <li>Basic Marketing</li>
-                                        <li>Whatsapp &amp; Email Support</li>
-                                    </ul>
-                                </div>
-                                <div class="pricing-action px-4"> <a href="pricing"
-                                        class="button button-small button-green">Know
-                                        More</a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include('include/section/pricing.php') ?>
 
         <div class="section mb-0 p-md-0 mt-5">
             <div class="container">
@@ -1234,7 +1082,7 @@
         </div>
 
         <script>
-        window.activeLink = 'menu-home';
+            window.activeLink = 'menu-home';
         </script>
 
 

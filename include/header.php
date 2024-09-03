@@ -11,14 +11,14 @@
       </div>
       <ul class="header-extras d-none d-sm-flex mx-auto mx-md-0 mb-4 mb-md-0">
         <li>
-          <i class="i-plain icon-call m-0"></i>
+          <i class="fa-solid fa-phone"></i>
           <div class="he-text font-weight-normal text-white-50">
             Call Us: <span><a href="tel:+91-8109645082"
-                class="text-white font-weight-medium">+91-0000000000</a></span>
+                class="text-white font-weight-medium">+91-9340014844</a></span>
           </div>
         </li>
         <li>
-          <i class="i-plain icon-line2-envelope m-0"></i>
+          <i class="fa-regular fa-envelope"></i>
           <div class="he-text font-weight-normal text-white-50">
             Email Us: <span><a href="mailto:info@truesign.in" target="_top"
                 class="text-white font-weight-medium">info@truesign.in</a></span>
@@ -32,12 +32,13 @@
     <div class="container">
       <div class="header-row justify-content-between flex-row-reverse flex-lg-row">
         <div class="header-misc">
-          <div id="top-search" class="header-misc-icon">
-            <a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
-          </div>
+          <!-- <div id="top-search" class="header-misc-icon">
+                        <a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i
+                                class="icon-line-cross"></i></a>
+                    </div> -->
           <div class="header-buttons d-none d-sm-inline-block">
             <a href="registration/new-author" data-offset="-80"
-              class="button button-rounded button-white button-light button-small m-0">
+              class="button button-rounded button-black button-light button-small m-0" style="color:#000;">
               Get Started
             </a>
           </div>
@@ -105,15 +106,16 @@
                   </a>
                 </li> -->
             <li class="menu-item menu-calculate-royalty">
-              <a class="menu-link" href="calculate/author-royalty" title="Author Royalty">
+              <a class="menu-link" href="royality-checker.php" title="Author Royalty">
                 <div>Calculate Royalty</div>
               </a>
             </li>
-            <!-- <li class="menu-item menu-registration">
-                  <a class="menu-link" href="registration/new-author" title="New Author Registration">
-                    <div>Registration</div>
-                  </a>
-                </li> -->
+
+            <li class="menu-item menu-registration">
+              <a class="menu-link" href="pricing.php" title="New Author Registration">
+                <div>Pricing</div>
+              </a>
+            </li>
             <li class="menu-item">
               <a class="menu-link" href="store" title="True Sign Bookstore" target="_blank">
                 <div>Book Store</div>
