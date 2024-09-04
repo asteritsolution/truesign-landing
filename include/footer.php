@@ -56,8 +56,8 @@
             </h4>
             <div>
               <address>
-              G-3, HDB Arcade, Door Sanchar Nagar, Gulmohar, 
-Near UCO Bank, Bhopal, Madhya Pradesh - 462039
+                G-3, HDB Arcade, Door Sanchar Nagar, Gulmohar,
+                Near UCO Bank, Bhopal, Madhya Pradesh - 462039
 
               </address>
               <h3 class="mb-3"><a href="tel:+91-8109645082"><i class="icon-call mr-1" style="font-size: 22px;"></i>

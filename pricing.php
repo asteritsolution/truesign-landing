@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include('include/head.php') ?>
+
+<body class="stretched">
+
+
+    <style>
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+
+        .has-error .form-control {
+            width: 80% !important;
+        }
+
+        .has-error .text-danger {
+            font-family: 'Arial', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            font-size: small;
+        }
+    </style>
+
+
+    <div id="wrapper" class="clearfix">
+
+        <style>
+            html,
+            body {
+                background: #fff;
+            }
+
+            .loader {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 9999;
+            }
+
+            .loader img {
+                width: 250px;
+            }
+
+            .loader-text-title {
+                color: #fff;
+                font-weight: 500;
+                line-height: 1.3;
+            }
+        </style>
+
+        <!-- Loader -->
+        <div class="loader">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="assets/images/logo/orangebooks-publication-logo@2x-white.png" alt="OrangeBooks" />
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Loader Ends -->
+
+        <link as="style" rel="stylesheet preload prefetch" href="assets/css/bootstrap.css" crossorigin="anonymous" />
+        <link as="style" rel="stylesheet preload prefetch" href="assets/css/style.css?_v=3" type="text/css" />
+        <link as="style" rel="stylesheet preload prefetch" href="assets/css/animate.css" type="text/css" />
+        <link as="style" rel="stylesheet preload prefetch" href="assets/fonts/font-icons.css" type="text/css" />
+
+        <link as="style" rel="stylesheet preload prefetch" href="assets/css/main.css?_v=3" type="text/css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css" />
+        <link as="style" rel="stylesheet preload prefetch" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
+        <style>
+            #pageloader {
+                top: 0px;
+                left: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.95);
+            }
+        </style>
+
+
+        <div id="pageloader" class="d-none">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <defs>
+                            <filter id="ldio-2xcif6i7uph-filter" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="2.4000000000000004"></feGaussianBlur>
+                                <feComponentTransfer result="cutoff">
+                                    <feFuncA type="table" tableValues="0 0 0 0 0 0 1 1 1 1 1"></feFuncA>
+                                </feComponentTransfer>
+                            </filter>
+                        </defs>
+                        <g filter="url(#ldio-2xcif6i7uph-filter)">
+                            <g transform="translate(50 50)">
+                                <g transform="rotate(316.478)">
+                                    <circle cx="17" cy="0" r="4.16059" fill="#df1317">
+                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="4s" repeatCount="indefinite" begin="-0.25s"></animate>
+                                    </circle>
+                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="4s" repeatCount="indefinite" begin="0s"></animateTransform>
+                                </g>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <g transform="rotate(281.956)">
+                                    <circle cx="17" cy="0" r="4.96117" fill="#e4934b">
+                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="2s" repeatCount="indefinite" begin="-0.2s"></animate>
+                                    </circle>
+                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="2s" repeatCount="indefinite" begin="-0.05s"></animateTransform>
+                                </g>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <g transform="rotate(256.435)">
+                                    <circle cx="17" cy="0" r="6.00174" fill="#e2bb8b">
+                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.3333333333333333s" repeatCount="indefinite" begin="-0.15s"></animate>
+                                    </circle>
+                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.3333333333333333s" repeatCount="indefinite" begin="-0.1s"></animateTransform>
+                                </g>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <g transform="rotate(239.912)">
+                                    <circle cx="17" cy="0" r="7.28235" fill="#e1e7e7">
+                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1s" repeatCount="indefinite" begin="-0.1s"></animate>
+                                    </circle>
+                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1s" repeatCount="indefinite" begin="-0.15s"></animateTransform>
+                                </g>
+                            </g>
+                            <g transform="translate(50 50)">
+                                <g transform="rotate(232.39)">
+                                    <circle cx="17" cy="0" r="7.99706" fill="#91bcc6">
+                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="0.8s" repeatCount="indefinite" begin="-0.05s"></animate>
+                                    </circle>
+                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="0.8s" repeatCount="indefinite" begin="-0.2s"></animateTransform>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="col-12 text-center">
+                    <h4>
+                        <small>We are submiting your form.</small> <br />
+                        <b>Please do not refresh this page.</b>
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+        
+        
+        <?php include('include/header.php') ?>
+
+        <link rel="stylesheet" href="assets/css/pricing-table.css" type="text/css" />
+        <section id="content">
+            <div class="section m-0 overflow-hidden parallax align-items-center">
+                <div class="container clearfix center">
+                    <div class="text-center">
+                        <div class="content">
+                            <div class="badge badge-pill badge-default">Book Publishing Services</div>
+                            <h1>Everything you need to become a<br>
+                                Best Seller Author!
+                            </h1>
+                        </div>
+                        <p class="pr-lg-6 pl-lg-6">At OrangeBooks Publication, you get the best options for self publishing services in India that helps you to self publish your book professionally. Complete set of publishing services. From designing book covers to publishing, promotion to distribution.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="pricing-container">
+                <div id="pricing-cards">
+                    <div class="row m-0 p-0">
+                        <div class="col-lg-3 m-0 p-0">
+                            <div class="price-card">
+                                <div class="price-card--header">
+                                    <h4>Starter</h4>
+                                    <p class="pr-2 pl-2">Lets you get starterd. Recommended for small fiction/poerty books.</p>
+                                </div>
+                                <div class="price-card--price">
+                                    <div class="price-card--price-text">
+                                        <div class="price-card--price-number">9,990</div>
+                                    </div>
+                                    <div class="price-card--price-conditions">
+                                        <div class="price-card--onboarding-fee pr-2 pl-2">Get your book published in a beautiful format with our experts.</div>
+                                    </div>
+                                </div>
+                                <div class="price-card--features">
+                                    <ul class="price-card--features--list">
+                                        <h5 class="mb-0">Cover Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Standard Cover Design
+                                            <div class="tooltip-container">
+                                                <strong>Cover Designing</strong>
+                                                <p>Our team will design standard cover for you. <br />From Pixabay image library. <br />2 Revisions round included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            1 Cover Sample
+                                            <div class="tooltip-container">
+                                                <strong>Cover Sample Option</strong>
+                                                <p>We will provide you 1 cover design sample.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback cover
+                                            <div class="tooltip-container">
+                                                <strong>Paperback version Included.</strong>
+                                                <p>Softcover/Paperback will have 300 gsm paper both side lamination.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            2 Cover Revision Round
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry cover revision</strong>
+                                                <p>2 Free cover revision rounds included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Hardback cover
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Interior Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback & ebook
+                                            <div class="tooltip-container">
+                                                <strong>Sell in 2 versions.</strong>
+                                                <p>Sell your book in both Paperback and ebook versions.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            B/W Interior Type
+                                            <div class="tooltip-container">
+                                                <strong>Interior Type</strong>
+                                                <p>Basic plain black & white interior in included in this package.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Basic Interior Design
+                                            <div class="tooltip-container">
+                                                <strong>Basic Interior Designing</strong>
+                                                <p>Get basic interior design as per industry standards.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            2 Interior Revision Round
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Revision Rounds</strong>
+                                                <p>Get 2 unlimited complimentry revision rounds. </p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Plain Text (Limit 150 Pages) Manuscript Type
+                                            <div class="tooltip-container">
+                                                <strong>Plain Text Interior Only</strong>
+                                                <p>Plain text interior included in this package with page limit of upto 150 page in 5x8 size.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Manuscript Editing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Basic Spelling Correction
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Spelling Check</strong>
+                                                <p>Our team will check basic spelling mistakes free for first 5000 words.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Manuscript Editing
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Manuscript Proofreading
+                                            <div class="tooltip-container">
+                                                <strong>Manuscript Proofreading</strong>
+                                                <p>Our team will check basic manuscript proofreading for first 5000 words.</p>
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Content Security</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            ISBN / Barcode
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary ISBN /Barcode</strong>
+                                                <p>ISBN is known throughout the world as a short and clear machine-readable identification number, which marks any book unmistakably. ISBN is a machine readable in the form of 13-digit i.e. Book land EAN Bar Code. </p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Copyright With Author
+                                            <div class="tooltip-container">
+                                                <strong>Copyright With Author</strong>
+                                                <p>You maintain the full rights to your book! We exist to help you reach the market via our distribution partners and act as a publishing label. Publishing with OrangeBooks Publication is a non-exclusive publishing agreement. We don’t own any of your content and you can even publish it elsewhere if you wish.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Government Copyright
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Printing Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Unlimited Inventory Management
+                                            <div class="tooltip-container">
+                                                <strong>Print-On-demand</strong>
+                                                <p>We only print fresh copies of your book when we receive orders. Hence we can manage unlimited inventory/printing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Upto 10 Complimentary Book Copies
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary Author Copies</strong>
+                                                <p>We will provide upto 10 complimentary author copies for approx 100 page book in white pages of 5x8 inch size.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Digital Proof
+                                            <div class="tooltip-container">
+                                                <strong>Digital Proofing</strong>
+                                                <p>Before printing we will send you softcopy of the manuscript and cover for your review.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Extra Copy at Printing Cost
+                                            <div class="tooltip-container">
+                                                <strong>Additional Author Copies</strong>
+                                                <p>Additional author copies will be provided at print cost + taxex + shipping cost to author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Print Proof
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Distribution Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            India Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>India Online Distribution</strong>
+                                                <p>The book will be listed in India on all major platforms like Amazon / Flipkart / Google Playstore / Kindle and OrangeBooks Store website.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            eBook Distribution
+                                            <div class="tooltip-container">
+                                                <strong>Online E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            International Online Distribution
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            International Distribution
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Shop Distribution
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Marketing Plans</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Promotion
+                                            <div class="tooltip-container">
+                                                <strong>Digital Promotion</strong>
+                                                <p>We will promote your book across all platform from our profile.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            e-Author Certificate
+                                            <div class="tooltip-container">
+                                                <strong>Published e-Author Certificate</strong>
+                                                <p>Author will get an e-certificate from OrangeBooks Publication.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Author Interview
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Social Page Creation
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Goodreads Account Creation
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Book Video Trailer
+                                            <div class="tooltip-container">
+
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Website (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Author Website</strong>
+                                                <p>This is an addon service available if required. This will help author create global presence. Domain and hosting must be provided from author end.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Website Domain Registration & Hosting (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Domain / Hosting</strong>
+                                                <p>This is add-on service which helps in creation and hosting of author website.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Review
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Facebook/Instagram Ad<br>Campaign
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            e-Visiting Card
+                                            <div class="tooltip-container">
+                                                <strong>e-Visiting Card</strong>
+                                                <p>We will create and share e-Visiting Card to the author.</p>
+                                            </div>
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Posts
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Post</strong>
+                                                <p>We will create and share book promotional post across all our social media platforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Poster
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Author Page Setup
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Prime Placement<br>(Add-On)
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Pre-Orders (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Pre-Order On OrangeBooks Store</strong>
+                                                <p>The book will be available for pre-order on OrangeBooks Store. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Sponsored Ads<br>(Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run book sponsored adds on Amazon. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Kindle Promotions (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Kindle(KDP) Promotion</strong>
+                                                <p>We will run book sponsored adds on Amazon Kindle. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            AudioBook Publishing (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>AudioBook Publishing</strong>
+                                                <p> We will create and publish audiobook of the book along with paperback and e-book. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Custom Bookmarks
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Online Press Release
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Royalty & Support</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Monthly Royalty Update
+                                            <div class="tooltip-container">
+                                                <strong>Daily Update</strong>
+                                                <p>Author will get daily royalty/order update of paperback version.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Payout on Request
+                                            <div class="tooltip-container">
+                                                <strong>Regular Payouts</strong>
+                                                <p>Author will get payout on request once every month. For more kindly visit calculate royalty page.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            100% Profit Share
+                                            <div class="tooltip-container">
+                                                <strong>100% Profit Share</strong>
+                                                <p>Author will get 100% of the profit. Profit = MRP - (Production cost +tax + distribution charges).</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Project Manager
+                                            <div class="tooltip-container">
+                                                <strong>Dedicated Support</strong>
+                                                <p>Author will get dedicated project manager.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Post-Publishing Support
+                                            <div class="tooltip-container">
+                                                <strong>Support</strong>
+                                                <p>Author will get all the post publishing support from OrangeBooks via support ticket only.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price-card--cta">
+                                    <a class="button button-rounded button-small button-border" href="registration/new-author">Get Started</a>
+                                </div>
+                                <div class="price-card--mobile-features-toggle"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 m-0 p-0">
+                            <div class="price-card">
+                                <div class="price-card--header">
+                                    <h4>Standard</h4>
+                                    <p class="pr-2 pl-2">Recommended for fiction/Non-fiction & poetry books. With Basic marketing.</p>
+                                </div>
+                                <div class="price-card--price">
+                                    <div class="price-card--price-text">
+                                        <div class="price-card--price-number">15,990</div>
+                                    </div>
+                                    <div class="price-card--price-conditions">
+                                        <div class="price-card--onboarding-fee pr-2 pl-2">Promote your book to a larger community & sell more copies.</div>
+                                    </div>
+                                </div>
+                                <div class="price-card--features">
+                                    <ul class="price-card--features--list">
+                                        <h5 class="mb-0">Cover Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Standard Cover Design
+                                            <div class="tooltip-container">
+                                                <strong>Cover Designing</strong>
+                                                <p>Our team will design standard cover for you.
+                                                    From Pixabay/shutterStock image library. 2 Revisions round included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            2 Cover Sample
+                                            <div class="tooltip-container">
+                                                <strong>Cover Sample Option</strong>
+                                                <p>We will provide you 2 cover design sample.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback cover
+                                            <div class="tooltip-container">
+                                                <strong>Paperback version Included.</strong>
+                                                <p>Softcover/Paperback will have 300 gsm paper both side lamination.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            4 Cover Revision Round
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry cover revision</strong>
+                                                <p>4 Free cover revision rounds included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Hardback cover
+                                            <div class="tooltip-container">
+                                                <strong>APIs & SSO</strong>
+                                                <p>APIs to use our products in your dashboards.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Interior Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback & ebook
+                                            <div class="tooltip-container">
+                                                <strong>Sell in 2 versions.</strong>
+                                                <p>Sell your book in both Paperback and ebook versions.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            B/W Interior Type
+                                            <div class="tooltip-container">
+                                                <strong>Interior Type</strong>
+                                                <p>Standard mordern design black & white interior with some black & white images are included in this package.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Standard Interior Design
+                                            <div class="tooltip-container">
+                                                <strong>Standard Interior Designing</strong>
+                                                <p>Get standard interior design as per industry standards.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            4 Interior Revision Round
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Revision Rounds</strong>
+                                                <p>Get 4 unlimited complimentry revision rounds.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Table & Image Text (Limit 150 Pages) Manuscript Type
+                                            <div class="tooltip-container">
+                                                <strong>Table & Images Included</strong>
+                                                <p> Standard text interior with some tables/images are included in this package with page limit of upto 150 page in 5x8 size.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Manuscript Editing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Basic Spelling Correction
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Spelling Check</strong>
+                                                <p>Our team will check basic spelling mistakes free for first 10000 words.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Manuscript Editing
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Manuscript Proofreading
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Proofreading</strong>
+                                                <p>Our team will do basic proofreading check to make the manuscript mistakes free for first 10000 words.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Content Security</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            ISBN / Barcode
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary ISBN /Barcode</strong>
+                                                <p>ISBN is known throughout the world as a short and clear machine-readable identification number, which marks any book unmistakably. ISBN is a machine readable in the form of 13-digit i.e. Book land EAN Bar Code. </p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Copyright With Author
+                                            <div class="tooltip-container">
+                                                <strong>Copyright With Author</strong>
+                                                <p>You maintain the full rights to your book! We exist to help you reach the market via our distribution partners and act as a publishing label. Publishing with OrangeBooks Publication is a non-exclusive publishing agreement. We don’t own any of your content and you can even publish it elsewhere if you wish.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Government Copyright
+                                            <div class="tooltip-container">
+                                                <strong>Government Copyright</strong>
+                                                <p>It ensuring right to receive royalties for authors exclusive rights in copyright societies for authors and other right owners and exception of copyrights for physically disabled to access any works. </p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Printing Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Unlimited Inventory Management
+                                            <div class="tooltip-container">
+                                                <strong>Print-On-demand</strong>
+                                                <p>We only print fresh copies of your book when we receive orders. Hence we can manage unlimited inventory/printing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Upto 15 Complimentary Book Copies
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary Author Copies</strong>
+                                                <p>We will provide upto 15 complimentary author copies for approx 150 page book in white pages of 5x8 inch size.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Digital Proof
+                                            <div class="tooltip-container">
+                                                <strong>Digital Proofing</strong>
+                                                <p>Before printing we will send you softcopy of the manuscript and cover for your review.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Extra Copy at Printing Cost
+                                            <div class="tooltip-container">
+                                                <strong>Additional Author Copies</strong>
+                                                <p>Additional author copies will be provided at print cost + taxex + shipping cost to author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Print Proof
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Distribution Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            India Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>India Online Distribution</strong>
+                                                <p>The book will be listed in India on all major platforms like Amazon / Flipkart / Google Playstore / Kindle and OrangeBooks Store website.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            eBook Distribution
+                                            <div class="tooltip-container">
+                                                <strong>Online E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            International Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>International E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            International Distribution
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Shop Distribution
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Marketing Plans</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Promotion
+                                            <div class="tooltip-container">
+                                                <strong>Digital Promotion</strong>
+                                                <p>We will promote your book across all platform from our profile.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            e-Author Certificate
+                                            <div class="tooltip-container">
+                                                <strong>Published e-Author Certificate</strong>
+                                                <p>Author will get an e-certificate from OrangeBooks Publication.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Interview Blog
+                                            <div class="tooltip-container">
+                                                <strong>Interview With Author</strong>
+                                                <p>In this we will get author interview in a blog format which will be shared with PR agencies on their request.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Social Page Creation
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Goodreads Account Creation
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Book Video Trailer
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Video Trailer</strong>
+                                                <p>We will create a beautiful video trailer to promote your book. The trailer will be shared accoss all our plateforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Website (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Author Website</strong>
+                                                <p>This is an addon service available if required. This will help author create global presence. Domain and hosting must be provided from author end.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Website Domain Registration & Hosting (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Domain / Hosting</strong>
+                                                <p>This is add-on service which helps in creation and hosting of author website.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Review
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            5 Days Facebook/Instagram Ad Campaign
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run sponsored ads on Facebook/Instagram for book promotion and marketing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            e-Visiting Card
+                                            <div class="tooltip-container">
+                                                <strong>e-Visiting Card</strong>
+                                                <p>We will create and share e-Visiting Card to the author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Posts
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Post</strong>
+                                                <p>We will create and share book promotional post across all our social media platforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Poster
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Author Page Setup
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Prime Placement<br>(Add-On)
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Pre-Orders
+                                            <div class="tooltip-container">
+                                                <strong>Pre-Order On OrangeBooks Store</strong>
+                                                <p>The book will be available for pre-order on OrangeBooks Store. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Sponsored Ads<br>(Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run book sponsored adds on Amazon. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Kindle Promotions (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Kindle(KDP) Promotion</strong>
+                                                <p>We will run book sponsored adds on Amazon Kindle. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            AudioBook Publishing (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>AudioBook Publishing</strong>
+                                                <p> We will create and publish audiobook of the book along with paperback and e-book. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Custom Bookmarks
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Online Press Release
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Royalty & Support</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Monthly Royalty Update
+                                            <div class="tooltip-container">
+                                                <strong>Daily Update</strong>
+                                                <p>Author will get daily royalty/order update of paperback version.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Payout on Request
+                                            <div class="tooltip-container">
+                                                <strong>Regular Payouts</strong>
+                                                <p>Author will get payout on request once every month. For more kindly visit calculate royalty page.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            100% Profit Share
+                                            <div class="tooltip-container">
+                                                <strong>100% Profit Share</strong>
+                                                <p>Author will get 100% of the profit. Profit = MRP - (Production cost +tax + distribution charges).</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Project Manager
+                                            <div class="tooltip-container">
+                                                <strong>Dedicated Support</strong>
+                                                <p>Author will get dedicated project manager.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Post-Publishing Support
+                                            <div class="tooltip-container">
+                                                <strong>Support</strong>
+                                                <p>Author will get all the post publishing support from OrangeBooks via support ticket only.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price-card--cta">
+                                    <a class="button button-rounded button-small button-border" href="registration/new-author">Get Started</a>
+                                </div>
+                                <div class="price-card--mobile-features-toggle"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 m-0 p-0">
+                            <div class="price-card price-card--hero">
+                                <div class="price-card--header">
+                                    <h4>Professional</h4>
+                                    <p class="pr-2 pl-2">Best for Academic/Thesis/Competitive books. Advance marketing included.</p>
+                                </div>
+                                <div class="price-card--hero-text">
+                                    Most Popular Plan
+                                </div>
+                                <div class="price-card--price">
+                                    <div class="price-card--price-text">
+                                        <div class="price-card--price-number">24,990</div>
+                                    </div>
+                                    <div class="price-card--price-conditions">
+                                        <div class="price-card--onboarding-fee pr-2 pl-2">With our experts, mark your online and offline presence.</div>
+                                    </div>
+                                </div>
+                                <div class="price-card--features">
+                                    <ul class="price-card--features--list">
+                                        <h5 class="mb-0">Cover Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Customized Cover Design
+                                            <div class="tooltip-container">
+                                                <strong>Cover Designing</strong>
+                                                <p>Our team will design Premium cover for you.
+                                                    From Pixabay/shutterStock image library.
+                                                    6 Revisions round included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            3 Cover Sample
+                                            <div class="tooltip-container">
+                                                <strong>Cover Sample Option</strong>
+                                                <p>We will provide you 3 cover design sample.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback cover
+                                            <div class="tooltip-container">
+                                                <strong>Paperback version Included.</strong>
+                                                <p>Softcover/Paperback will have 300 gsm paper both side lamination.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            6 Cover Revision Round
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry cover revision</strong>
+                                                <p>6 Free cover revision rounds included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Hardback cover
+                                            <div class="tooltip-container">
+                                                <strong>Hardback cover option included</strong>
+                                                <p>You can choose </p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Interior Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback & ebook
+                                            <div class="tooltip-container">
+                                                <strong>Sell in 2 versions.</strong>
+                                                <p>Sell your book in both Paperback and ebook versions.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            B/W or Colour Interior
+                                            <div class="tooltip-container">
+                                                <strong>Interior Type</strong>
+                                                <p>Custom mordern design black & white or interior with some coloured images are included in this package.</p>
+                                            </div>
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Premium Interior Design
+                                            <div class="tooltip-container">
+                                                <strong>Premium Interior Design</strong>
+                                                <p>Get premium interior design as per industry standards.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            6 Interior Revision Round
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Revision Rounds</strong>
+                                                <p>Get 6 unlimited complimentry revision rounds.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Table & Image Text (Limit 200 Pages) Manuscript Type
+                                            <div class="tooltip-container">
+                                                <strong>Premium Table & Images Text</strong>
+                                                <p>Premium text interior with tables/images are included in this package with page limit of upto 200 page in 5x8 size. Best suitable for academic books.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Manuscript Editing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Basic Spelling Correction
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Spelling Check</strong>
+                                                <p>Our team will check basic spelling mistakes free for first 20000 words.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Editing (Upto 20k Words)
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Editing</strong>
+                                                <p>Our team will do advance editing check to make the manuscript more attractive/interesting free for first 20000 words.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Proofreading (Upto 20k Words)
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Proofreading</strong>
+                                                <p>Our team will do basic proofreading check to make the manuscript mistakes free for first 20000 words.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Content Security</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            ISBN / Barcode
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary ISBN /Barcode</strong>
+                                                <p>ISBN is known throughout the world as a short and clear machine-readable identification number, which marks any book unmistakably. ISBN is a machine readable in the form of 13-digit i.e. Book land EAN Bar Code. </p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Copyright With Author
+                                            <div class="tooltip-container">
+                                                <strong>Copyright With Author</strong>
+                                                <p>You maintain the full rights to your book! We exist to help you reach the market via our distribution partners and act as a publishing label. Publishing with OrangeBooks Publication is a non-exclusive publishing agreement. We don’t own any of your content and you can even publish it elsewhere if you wish.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Government Copyright
+                                            <div class="tooltip-container">
+                                                <strong>Government Copyright</strong>
+                                                <p>It ensuring right to receive royalties for authors exclusive rights in copyright societies for authors and other right owners and exception of copyrights for physically disabled to access any works. </p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Printing Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Unlimited Inventory Management
+                                            <div class="tooltip-container">
+                                                <strong>Print-On-demand</strong>
+                                                <p>We only print fresh copies of your book when we receive orders. Hence we can manage unlimited inventory/printing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Upto 20 Complimentary Book Copies
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary Author Copies</strong>
+                                                <p>We will provide upto 20 complimentary author copies for approx 150 page book in white pages of 5x8 inch size.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Digital Proof
+                                            <div class="tooltip-container">
+                                                <strong>Digital Proofing</strong>
+                                                <p>Before printing we will send you softcopy of the manuscript and cover for your review.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Extra Copy at Printing Cost
+                                            <div class="tooltip-container">
+                                                <strong>Additional Author Copies</strong>
+                                                <p>Additional author copies will be provided at print cost + taxex + shipping cost to author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Print Proof (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Print Proof For Review</strong>
+                                                <p>We will send 1 print proof copy to author before bulk printing.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Distribution Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            India Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>India Online Distribution</strong>
+                                                <p>The book will be listed in India on all major platforms like Amazon / Flipkart / Google Playstore / Kindle and OrangeBooks Store website.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            eBook Distribution
+                                            <div class="tooltip-container">
+                                                <strong>Online E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            International Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>International E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            International Distribution
+                                            <div class="tooltip-container">
+                                                <strong>International Online Paperback Distribution</strong>
+                                                <p>The book will be listed online on all major plateforms across globe.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Shop Distribution
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Marketing Plans</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Promotion
+                                            <div class="tooltip-container">
+                                                <strong>Digital Promotion</strong>
+                                                <p>We will promote your book across all platform from our profile.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            e-Author Certificate
+                                            <div class="tooltip-container">
+                                                <strong>Published e-Author Certificate</strong>
+                                                <p>Author will get a printed certificate from OrangeBooks Publication.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Interview Blog
+                                            <div class="tooltip-container">
+                                                <strong>Interview With Author</strong>
+                                                <p>In this we will get author interview in a blog format which will be shared with PR agencies on their request.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Social Page Creation
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Goodreads Account Creation
+                                            <div class="tooltip-container">
+                                                <strong>Goodreads Profile</strong>
+                                                <p>We will create goodreads profile for your book.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Book Video Trailer
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Video Trailer</strong>
+                                                <p>We will create a beautiful video trailer to promote your book. The trailer will be shared accoss all our plateforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Website (included)
+                                            <div class="tooltip-container">
+                                                <strong>Author Website</strong>
+                                                <p> This will help author create global presence. Domain and hosting is included in the package for 1 year.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Website Domain Registration & Hosting (1 year included)
+                                            <div class="tooltip-container">
+                                                <strong>Domain / Hosting</strong>
+                                                <p>This is included in the publishing package.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Review
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            7 Days Facebook/Instagram Ad Campaign
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run sponsored ads on Facebook/Instagram for book promotion and marketing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            e-Visiting Card
+                                            <div class="tooltip-container">
+                                                <strong>e-Visiting Card</strong>
+                                                <p>We will create and share e-Visiting Card to the author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Posts
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Post</strong>
+                                                <p>We will create and share book promotional post across all our social media platforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Poster
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Amazon Author Page Setup
+
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Prime Placement<br>(Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Prime Placement</strong>
+                                                <p>This is an add-on service. The book wioll be available on Amazon Prime for 3 Months</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Pre-Orders
+                                            <div class="tooltip-container">
+                                                <strong>Pre-Order On OrangeBooks/Amazon</strong>
+                                                <p>The book will be available for pre-order on Amazon/Orangebooks.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Sponsored Ads<br>(Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run book sponsored adds on Amazon.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Kindle Promotions (included)
+                                            <div class="tooltip-container">
+                                                <strong>Kindle(KDP) Promotion</strong>
+                                                <p>We will run book sponsored adds on Amazon Kindle.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            AudioBook Publishing (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>AudioBook Publishing</strong>
+                                                <p> We will create and publish audiobook of the book along with paperback and e-book. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Custom Bookmarks
+                                            <div class="tooltip-container">
+                                                <strong>Bookmarks</strong>
+                                                <p>We will include custom bookmarks in your complimentry copies.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">
+                                            Online Press Release
+
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Royalty & Support</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Monthly Royalty Update
+                                            <div class="tooltip-container">
+                                                <strong>Daily Update</strong>
+                                                <p>Author will get daily royalty/order update of paperback version.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Payout on Request
+                                            <div class="tooltip-container">
+                                                <strong>Regular Payouts</strong>
+                                                <p>Author will get payout on request once every month. For more kindly visit calculate royalty page.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            100% Profit Share
+                                            <div class="tooltip-container">
+                                                <strong>100% Profit Share</strong>
+                                                <p>Author will get 100% of the profit. Profit = MRP - (Production cost +tax + distribution charges).</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Project Manager
+                                            <div class="tooltip-container">
+                                                <strong>Dedicated Support</strong>
+                                                <p>Author will get dedicated project manager.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Post-Publishing Support
+                                            <div class="tooltip-container">
+                                                <strong>Support</strong>
+                                                <p>Author will get all the post publishing support from OrangeBooks via support ticket or limited whatsapp support.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price-card--cta">
+                                    <a class="button button-rounded" href="registration/new-author">Get Started</a>
+                                </div>
+                                <div class="price-card--mobile-features-toggle"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 m-0 p-0">
+                            <div class="price-card">
+                                <div class="price-card--header">
+                                    <h4>Expert</h4>
+                                    <p class="pr-2 pl-2">Best for Academic/Thesis/Competitive books. Advance marketing included.</p>
+                                </div>
+                                <div class="price-card--price">
+                                    <div class="price-card--price-text only-yearly">
+                                        <div class="price-card--price-number">64,990</div>
+                                        <div class="only-yearly--text"><span>Only Available Yearly</span></div>
+                                    </div>
+                                    <div class="price-card--price-conditions">
+                                        <div class="price-card--onboarding-fee pr-2 pl-2">With our experts, mark your online and offline presence.</div>
+                                    </div>
+                                </div>
+                                <div class="price-card--features">
+                                    <ul class="price-card--features--list">
+                                        <h5 class="mb-0">Cover Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Customized Cover Design
+                                            <div class="tooltip-container">
+                                                <strong>Cover Designing</strong>
+                                                <p>Our team will design Custom cover for you.
+                                                    From Pixabay/shutterStock image library.
+                                                    Ultimate revisions round included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            5 Cover Sample
+                                            <div class="tooltip-container">
+                                                <strong>Cover Sample Option</strong>
+                                                <p>We will provide you 5 cover design sample.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback cover
+                                            <div class="tooltip-container">
+                                                <strong>Paperback version Included.</strong>
+                                                <p>Softcover/Paperback will have 300 gsm paper both side lamination.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Unlimited Cover Revision
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry cover revision</strong>
+                                                <p>Unlimited free cover revision rounds included.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Hardback cover
+                                            <div class="tooltip-container">
+                                                <strong>Hardback cover option included.</strong>
+                                                <p>You can either choose from Hardback or softback cover for your book.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Interior Designing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Paperback & ebook
+                                            <div class="tooltip-container">
+                                                <strong>Sell in 2 versions.</strong>
+                                                <p>Sell your book in both Paperback and ebook versions.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            B/W or Colour Interior
+                                            <div class="tooltip-container">
+                                                <strong>Interior Type</strong>
+                                                <p>Custom mordern design black & white or full coloured interior are included in this package.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Custom Interior Design
+                                            <div class="tooltip-container">
+                                                <strong>Custom Interior Design</strong>
+                                                <p>Get custom interior design as per your requirement.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Unlimited Interior Revision
+                                            <div class="tooltip-container">
+                                                <strong>Unlimited Complimentry Revisions</strong>
+                                                <p>Get unlimited complimentry revision rounds.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Table & Image Text (Limit 300 Pages) Manuscript Type
+                                            <div class="tooltip-container">
+                                                <strong>Custom Table & Images Text</strong>
+                                                <p>Custom text interior with tables/images are included in this package with page limit of upto 300 page in 5x8 size. Best suitable for academic books.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Manuscript Editing</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Basic Spelling Correction
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Spelling Check</strong>
+                                                <p>Our team will check basic spelling mistakes free for first 50,000 words.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Editing (Upto 50k Words)
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Editing</strong>
+                                                <p>Our team will do advance editing check to make the manuscript more attractive/interesting free for first 50000 words.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Proofreading (Upto 30k Words)
+                                            <div class="tooltip-container">
+                                                <strong>Complimentry Proofreading</strong>
+                                                <p>Our team will do basic proofreading check to make the manuscript mistakes free for first 50,000 words.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Content Security</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            ISBN / Barcode
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary ISBN /Barcode</strong>
+                                                <p>ISBN is known throughout the world as a short and clear machine-readable identification number, which marks any book unmistakably. ISBN is a machine readable in the form of 13-digit i.e. Book land EAN Bar Code. </p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Copyright With Author
+                                            <div class="tooltip-container">
+                                                <strong>Copyright With Author</strong>
+                                                <p>You maintain the full rights to your book! We exist to help you reach the market via our distribution partners and act as a publishing label. Publishing with OrangeBooks Publication is a non-exclusive publishing agreement. We don’t own any of your content and you can even publish it elsewhere if you wish.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Government Copyright
+                                            <div class="tooltip-container">
+                                                <strong>Government Copyright</strong>
+                                                <p>It ensuring right to receive royalties for authors exclusive rights in copyright societies for authors and other right owners and exception of copyrights for physically disabled to access any works. </p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Printing Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Unlimited Inventory Management
+                                            <div class="tooltip-container">
+                                                <strong>Print-On-demand</strong>
+                                                <p>We only print fresh copies of your book when we receive orders. Hence we can manage unlimited inventory/printing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Upto 50 Complimentary Book Copies
+                                            <div class="tooltip-container">
+                                                <strong>Complimentary Author Copies</strong>
+                                                <p>We will provide upto 50 complimentary author copies for approx 150 page book in white pages of 5x8 inch size.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Digital Proof
+                                            <div class="tooltip-container">
+                                                <strong>Digital Proofing</strong>
+                                                <p>Before printing we will send you softcopy of the manuscript and cover for your review.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Extra Copy at Printing Cost
+                                            <div class="tooltip-container">
+                                                <strong>Additional Author Copies</strong>
+                                                <p>Additional author copies will be provided at print cost + taxex + shipping cost to author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Print Proof
+                                            <div class="tooltip-container">
+                                                <strong>Print Proof For Review</strong>
+                                                <p>We will send 1 print proof copy to author before bulk printing.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Distribution Service</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            India Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>India Online Distribution</strong>
+                                                <p>The book will be listed in India on all major platforms like Amazon / Flipkart / Google Playstore / Kindle and OrangeBooks Store website.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            eBook Distribution
+                                            <div class="tooltip-container">
+                                                <strong>Online E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            International Online Distribution
+                                            <div class="tooltip-container">
+                                                <strong>International E-Book Distribution</strong>
+                                                <p>The book will be listed in ebook format on Kindle and Google Playstore</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            International Distribution
+                                            <div class="tooltip-container">
+                                                <strong>International Online Paperback Distribution</strong>
+                                                <p>The book will be listed online on all major plateforms across globe.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Shop Distribution (Add-On)
+                                            <div class="tooltip-container">
+                                                <strong>Indian Physical Distribution</strong>
+                                                <p>Your book may be available for indian ofline physical distribution.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Marketing Plans</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Promotion
+                                            <div class="tooltip-container">
+                                                <strong>Digital Promotion</strong>
+                                                <p>We will promote your book across all platform from our profile.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Certificate
+                                            <div class="tooltip-container">
+                                                <strong>Published Author Certificate</strong>
+                                                <p>Author will get a printed certificate from OrangeBooks Publication.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Interview Blog
+                                            <div class="tooltip-container">
+                                                <strong>Interview With Author</strong>
+                                                <p>In this we will get author interview in a blog format which will be shared with PR agencies on their request.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Page Creation
+                                            <div class="tooltip-container">
+                                                <strong>Author Promotion Account</strong>
+                                                <p>We will create and manage author/book social media promotion page and manage on be-half of author for 1 month.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Goodreads Account Creation
+                                            <div class="tooltip-container">
+                                                <strong>Goodreads Profile</strong>
+                                                <p>We will create goodreads profile for your book.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Book Video Trailer
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Video Trailer</strong>
+                                                <p>We will create a beautiful video trailer to promote your book. The trailer will be shared accoss all our plateforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Author Website (included)
+                                            <div class="tooltip-container">
+                                                <strong>Author Website</strong>
+                                                <p> This will help author create global presence. Domain and hosting is included in the package for 1 year.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Website Domain Registration & Hosting (2 years included)
+                                            <div class="tooltip-container">
+                                                <strong>Domain / Hosting</strong>
+                                                <p>This is included in the publishing package.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Review
+                                            <div class="tooltip-container">
+                                                <strong>Reviews on Amazon</strong>
+                                                <p>We will provide 20 Complimentry amazon/kindle reviews of your book.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            15 Days Facebook/Instagram Ad Campaign
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run sponsored ads on Facebook/Instagram for book promotion and marketing.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Visiting Card
+                                            <div class="tooltip-container">
+                                                <strong>Author Visiting Card</strong>
+                                                <p>100 printed visiting cards will be provided to author.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Social Media Posts
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Post</strong>
+                                                <p>We will create and share book promotional post across all our social media platforms.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Poster
+                                            <div class="tooltip-container">
+                                                <strong>Promotional Poster/Flex</strong>
+                                                <p>We will create and share book promotional poster/flex in printed format.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Author Page Setup
+                                            <div class="tooltip-container">
+                                                <strong>Author Amazon Page</strong>
+                                                <p>We will create authors amazon page.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Prime Placement<br>(included)
+                                            <div class="tooltip-container">
+                                                <strong>Prime Placement</strong>
+                                                <p>The book wioll be available on Amazon Prime for 3 Months</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Pre-Orders
+                                            <div class="tooltip-container">
+                                                <strong>Pre-Order On Amazon/Orangebooks</strong>
+                                                <p>The book will be available for pre-order on Amazon/Orangebooks.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Sponsored Ads<br>(included)
+                                            <div class="tooltip-container">
+                                                <strong>Sponsored Ads</strong>
+                                                <p>We will run book sponsored adds on Amazon.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Amazon Kindle Promotions (included)
+                                            <div class="tooltip-container">
+                                                <strong>Kindle(KDP) Promotion</strong>
+                                                <p>We will run book sponsored adds on Amazon Kindle. This is an add-on service.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            AudioBook Publishing (Included)
+                                            <div class="tooltip-container">
+                                                <strong>AudioBook Publishing</strong>
+                                                <p> We will create and publish audiobook of the book along with paperback and e-book.The audio will be auto generated.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Custom Bookmarks
+                                            <div class="tooltip-container">
+                                                <strong>Bookmarks</strong>
+                                                <p>We will include custom bookmarks in your first 100 orders.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Online Press Release (Included)
+                                            <div class="tooltip-container">
+                                                <strong>Press Coverage</strong>
+                                                <p>We will be provideing press coverage as per slot availablity in 2 populat online portals.</p>
+                                            </div>
+                                        </li>
+                                        <h5 class="pt-4 mb-0">Royalty & Support</h5>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Monthly Royalty Update
+                                            <div class="tooltip-container">
+                                                <strong>Daily Update</strong>
+                                                <p>Author will get daily royalty/order update of paperback version.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Payout on Request
+                                            <div class="tooltip-container">
+                                                <strong>Regular Payouts</strong>
+                                                <p>Author will get payout on request once every month. For more kindly visit calculate royalty page.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            100% Profit Share
+                                            <div class="tooltip-container">
+                                                <strong>100% Profit Share</strong>
+                                                <p>Author will get 100% of the profit. Profit = MRP - (Production cost +tax + distribution charges).</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Project Manager
+                                            <div class="tooltip-container">
+                                                <strong>Dedicated Support</strong>
+                                                <p>Author will get dedicated project manager.</p>
+                                            </div>
+                                        </li>
+                                        <li class="price-card--features--item has-tooltip">
+                                            Post-Publishing Support
+                                            <div class="tooltip-container">
+                                                <strong>Support</strong>
+                                                <p>Author will get all the post publishing support from OrangeBooks.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="price-card--cta">
+                                    <a class="button button-rounded button-small button-border" href="registration/new-author">Get Started</a>
+                                </div>
+                                <div class="price-card--mobile-features-toggle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="content" class="pt-lg-4">
+            <div id="section" style="background-color: #fdefe0;">
+                <div class="container p-lg-0">
+                    <div class="row justify-content-between align-items-center pt-4 pb-4 pt-lg-4 pb-lg-4 pt-md-4 pb-md-4">
+                        <div class="col-lg-7 col-md-7 mt-0 mt-md-4 pr-lg-6">
+                            <div class="feature-box fbox-plain fbox-sm">
+                                <div class="fbox-icon">
+                                    <i class="icon-money"></i>
+                                </div>
+                                <div class="fbox-content pb-4">
+                                    <h3>100% Author Royalty</h3>
+                                    <p class="text-normal">Earn 100% of the net profits on every book you sell. Our distributor network will enable you build an author brand, create growth-hacking strategies.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box fbox-plain fbox-sm">
+                                <div class="fbox-icon">
+                                    <i class="icon-graph"></i>
+                                </div>
+                                <div class="fbox-content pb-4">
+                                    <h3>Monthly Sales & Payout</h3>
+                                    <p class="text-normal">Check how many books you have sold on a monthly basis instead of waiting for statements and get your royalty paid every month for every sold book.</p>
+                                </div>
+                            </div>
+                            <div class="feature-box fbox-plain fbox-sm mb-0">
+                                <div class="fbox-icon">
+                                    <i class="icon-line2-globe"></i>
+                                </div>
+                                <div class="fbox-content pb-4">
+                                    <h3>Worldwide Distribution</h3>
+                                    <p class="text-normal">We make your book available in upto 150+ countries as paperback and eBook. We are in partnership with largest global book distribution networks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 mt-4 mt-md-0">
+                            <h2 class="ls0">Yet Not Convinced!</h2>
+                            <p class="text-muted mb-5 text-normal">Having more queries? Please register yourself to get a complete publishing consultancy right from writing to publishing the book worldwide or you may also check our FAQ section.</p>
+                            <div class="row" style="padding-bottom: 35px;">
+                                <div class="col-4">
+                                    <button onclick="window.location.href='registration/new-author';" class="button button-rounded button-large d-block m-0 center nott font-weight-semibold ls0">Register Now</button>
+                                </div>
+                                <div class="col-4">
+                                    <button onclick="window.location.href='frequently-asked-questions';" class="button button-rounded d-block button-border m-0 ml-5 center nott font-weight-semibold ls0" data-toggle="modal" data-target=".bs-example-modal-lg">Know More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            window.activeLink = 'menu-pricing';
+        </script>
+
+
+        <div id="free-consultation-form" class="d-none">
+            <div class="mx-auto p-4 free-consultation-container" style="max-width: 900px;">
+                <div class="row p-4 bg-white d-flex align-items-center justify-content-center rounded">
+                    <div class="col-md-6 center">
+                        <img src="assets/images/modal/free-consultation.png" alt="Free Consultation">
+                    </div>
+                    <div class="col-md-6 p-4">
+                        <h2 class="font-body mb-2">
+                            <small>Get Free Publishing</small> <br />
+                            Consultation Now!
+                        </h2>
+                        <p class="mb-4">
+                            Sign Up with us and get a free book publishing consultation from our experts.
+                        </p>
+
+                        <p class="mb-4 lead">
+                            <strong>Also, get a chance to win Upto<span style="color: #ED6926;"> 25% OFF</span> on all Publishing Plans.</strong>
+                        </p>
+
+                        <div class="form-widget">
+                            <!-- Free Consultation Form -->
+                            <form action="form-submit" id="FormToolsFreeConsultationLeadForm" class="row position-relative mb-0 disable-on-submit" enctype="multipart/form-data" method="post" accept-charset="utf-8" novalidate="novalidate">
+                                <input type="hidden" name="redirect_url" value="thankyou?utm_source=web&utm_medium=popup_lead_form&utm_campaign=free_consultation_modal" />
+                                <input type="hidden" name="key" value="785554226d8390fcf00af2c7ade1f911">
+                                <div class="form-process">
+                                    <div class="css3-spinner">
+                                        <div class="css3-spinner-scaler"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 input-group form-group">
+                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-line2-user"></i></span> </div>
+                                    <input type="text" name="name" id="focus-name" class="form-control required" value="" placeholder="Your Full Name" />
+                                </div>
+                                <div class="col-sm-12 input-group form-group">
+                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-line2-envelope"></i></span> </div>
+                                    <input type="email" name="email" id="email" class="form-control required" value="" placeholder="Your Email" />
+                                </div>
+                                <div class="col-sm-12 input-group form-group">
+                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-line2-call-out"></i></span> </div>
+                                    <input type="tel" name="phonenumber" pattern="[6-9]{1}[0-9]{9}" id="phonenumber" class="form-control required" value="" placeholder="Your Phone Number" />
+                                </div>
+                                <div class="col-sm-12 input-group form-group">
+                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-money"></i></span> </div>
+                                    <select class="form-control required" name="form-cf-74" id="form-cf-74">
+                                        <option value="">Your Publishing Budget</option>
+                                        <option value="Rs. 8000 - Rs. 10000">Rs. 8000 - Rs. 10,000</option>
+                                        <option value="Rs. 14,000 - Rs. 15,000">Rs. 14,000 - Rs. 15,000</option>
+                                        <option value="Rs. 20,000 - Rs. 25,000">Rs. 20,000 - Rs. 25,000</option>
+                                        <option value="Rs. 30,000 - Rs. 40,000">Rs. 30,000 - Rs. 40,000</option>
+                                        <option value="Above Rs. 50,000">Above Rs. 50,000</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 input-group form-group">
+                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-book2"></i></span> </div>
+                                    <select class="form-control required" name="form-cf-16" id="form-cf-16">
+                                        <option value="">Your Manuscript Status</option>
+                                        <option value="Want to start the process today.">Want to start the process today.</option>
+                                        <option value="Want to start the process within a week.">Want to start the process within a week.</option>
+                                        <option value="It will take a month to get ready.">It will take a month to get ready.</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button data-sitekey="6LcMwNkaAAAAAB4cCv_E6s2OfiA0OyDUMmTTjNF1" data-callback="onSubmitFreeConsultationLeadForm" data-action="submit" class="btn bg-color text-white font-weight-medium btn-block py-2 mt-2 g-recaptcha">
+                                        Sign Up &amp; Get Your Discount Today!
+                                    </button>
+                                </div>
+                            </form> <a href="#" class="text-black-50 btn btn-link btn-block center" id="close-free-consultation-form">
+                                <small>
+                                    <u>No, I Don't Want Discount</u>
+                                </small>
+                            </a>
+
+                            <hr>
+                            <small>
+                                This site is protected by reCAPTCHA and the Google
+                                <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                                <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <?php include('include/footer.php') ?>
+        <!-- Footer end -->
+       
+    </div>
+
+    <div id="gotoTop" class="icon-angle-up"></div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="assets/js/plugins.js"></script>
+    <script defer src="assets/js/functions.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://wissenpress.com/hub/assets/builds/common.js?v=2.3.3"></script>
+    <script defer src="assets/js/custom.js?v=6.2"></script>
+</body>
+
+</html>
