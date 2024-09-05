@@ -59,7 +59,7 @@ a {
 }
 
 a {
-    color: #fff!important;
+    color: #fff !important;
 }
 
 a:hover {
@@ -86,11 +86,11 @@ h3,
 h4,
 h5,
 h6 {
-    color: #ED6926;
+    color: #388977;
     font-weight: 600;
     line-height: 1.5;
     margin: 0 0 30px;
-    font-family: Poppins, sans-serif
+    font-family: Poppins, sans-serif;
 }
 
 h5,
@@ -8304,7 +8304,7 @@ body:not(.device-touch) .button {
 
 .button.button-light {
     background-color: #eee;
-    color: #333;
+    color: #5c5c5c !important;
     text-shadow: none !important
 }
 
@@ -11860,7 +11860,7 @@ body:not(.device-touch) .clients-grid .grid-item a {
 
 .pricing-title.title-sm h3 {
     font-size: 1rem;
-    color:#388977;
+    color: #388977;
 }
 
 .pricing-title.title-sm span {
@@ -16763,8 +16763,13 @@ stiicky-socialsidebar {
 }
 
 
- 
+
 
 .button-darkgreen {
-    background-color: #388977!important;
+    background-color: #388977 !important;
+}
+
+
+.bgcolorgreendark{
+    background-color: #388977;
 }
