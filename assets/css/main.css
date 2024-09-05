@@ -1671,97 +1671,61 @@ body #side-panel.dark {
 }
 
 .dark .si-dark {
-	background-color: rgba(0,
-			0,
-			0,
-			.2);
+	background-color: rgba(0, 0, 0, .2);
 	color: #fff !important;
-	border-color: transparent
+	border-color: transparent;
 }
 
 .dark .si-light {
-	background-color: rgba(255,
-			255,
-			255,
-			.15);
+	background-color: rgba(255, 255, 255, .15);
 	color: #ccc !important;
-	border-color: transparent
+	border-color: transparent;
 }
 
 .dark .si-share {
-	border-top-color: rgba(255,
-			255,
-			255,
-			.15);
-	border-bottom-color: rgba(255,
-			255,
-			255,
-			.15)
+	border-top-color: rgba(255, 255, 255, .15);
+	border-bottom-color: rgba(255, 255, 255, .15);
 }
 
 .dark .toggle-header,
 .dark .accordion-header {
-	color: #eee
+	color: #388977;
 }
 
 .dark .toggle-bg .toggle-header,
 .dark .accordion-bg .accordion-header {
-	background-color: rgba(0,
-			0,
-			0,
-			.2)
+	background-color: rgba(0, 0, 0, .2);
 }
 
 .dark .toggle-border,
 .dark .accordion-border,
 .dark .accordion-border .accordion-header {
-	border-color: rgba(255,
-			255,
-			255,
-			.15)
+	border-color: rgba(255, 255, 255, .15);
 }
 
 .dark .faqs .toggle {
-	border-bottom-color: rgba(255,
-			255,
-			255,
-			.15)
+	border-bottom-color: rgba(255, 255, 255, .15)
 }
 
 .dark .accordion-header {
-	border-top-color: rgba(255,
-			255,
-			255,
-			.15)
+	border-top-color: rgba(255, 255, 255, .15)
 }
 
 .dark .tab-nav {
-	border-bottom-color: rgba(255,
-			255,
-			255,
-			.1)
+	border-bottom-color: rgba(255, 255, 255, .1)
 }
 
 .dark .tab-nav li {
-	border-color: rgba(255,
-			255,
-			255,
-			.1)
+	border-color: rgba(255, 255, 255, .1)
 }
 
 .dark .tab-nav li:first-child {
-	border-left-color: rgba(255,
-			255,
-			255,
-			.1)
+	border-left-color: rgba(255, 255, 255, .1)
 }
 
 .dark .tab-nav li a {
 	color: #eee;
-	background-color: rgba(0,
-			0,
-			0,
-			.2)
+	background-color: rgba(0, 0, 0, .2)
 }
 
 .dark .tab-nav li.ui-tabs-active a {

@@ -221,7 +221,7 @@
 
 
 
-        <div class="section bg-transparent clearfix">
+        <div class="section  clearfix" style="background-color: #f0ece0;">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-12 col-md-5 pt-4 pb-4">
