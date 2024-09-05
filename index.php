@@ -151,7 +151,11 @@
 
         <?php include('include/section/pricing.php') ?>
 
-        <div class="section mb-0 p-md-0 mt-5">
+        <div class="section" style="background-color: #f0ece0; color:#000;">
+            <div class="heading-block border-bottom-0" style="text-align:center;">
+                <!-- <div class="badge badge-pill badge-default">Pricing</div> -->
+                <h2 class="nott h2 ls0" style="color:#388977;">Top Seller</h2>
+            </div>
             <div class="container">
                 <div class="row align-items-center justify-content-between m-0">
                     <div class="col-lg-6 col-md-6 col-sm-6 pt-lg-6 pb-lg-6">
