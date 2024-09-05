@@ -2,6 +2,14 @@
 <html lang="en">
 
 <?php include('include/head.php') ?>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .carousel-item img {
+        box-shadow: 1px 1px 9px 2px #388977;
+        width: 100%;
+        height: auto;
+    }
+</style>
 
 <body class="stretched">
     <div id="wrapper" class="clearfix">
@@ -14,8 +22,8 @@
             type="text/css" />
         <link as="style" rel="stylesheet preload prefetch" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-     
- 
+
+
 
 
         <?php include('include/header.php') ?>
@@ -129,11 +137,14 @@
                         </div>
                     </div>
 
-                  
+
                 </div>
             </div>
-         
+
         </section>
+
+        <?php include('include/section/slider-book.php') ?>
+
 
         <?php include('include/section/description.php') ?>
 
@@ -143,11 +154,11 @@
         <div class="section mb-0 p-md-0 mt-5">
             <div class="container">
                 <div class="row align-items-center justify-content-between m-0">
-                <div class="col-lg-6 col-md-6 col-sm-6 pt-lg-6 pb-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6 pt-lg-6 pb-lg-6">
                         <div class="d-lg-flex"> <img src="assets/images/ebook_or_paperback.jpg" class="fast" alt="Image"
                                 style="width: 100%; height:100%"> </div>
                     </div>
-                 
+
                     <div class="col-lg-6 col-md-6 col-sm-6 pt-lg-6 pb-lg-6">
                         <div class="d-lg-flex"> <img src="assets/images/ebook_or_paperback.jpg" class="fast" alt="Image"
                                 style="width: 100%; height:100%"> </div>
@@ -160,7 +171,7 @@
             <div class="container clearfix">
                 <div class="row justify-content-center pb-4 pt-4">
                     <div class="col-md-10 center">
-                        
+
                         <p class="text-normal pb-3" style="color: #fff;">When you publish your book with True Sign Publication, it is
                             published in both
                             Paperback and eBook (most advanced print replica) and gets available in upto 150+ countries.
@@ -208,7 +219,7 @@
             </div>
         </div>
 
-        
+
 
         <div class="section bg-transparent clearfix">
             <div class="container">
@@ -268,11 +279,37 @@
             </div>
         </div>
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Footer Start -->
         <?php include('include/footer.php') ?>
         <!-- Footer end -->
     </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- <div id="gotoTop" class="icon-angle-up"></div> -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

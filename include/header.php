@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-row">
       <div id="logo" class="ml-auto ml-md-0">
-        <a href="" class="standard-logo">
+        <a href="index.php" class="standard-logo">
           <img class="mx-auto" src="assets/images/logo/orangebooks-publication-logo@2x-white.png" alt="">
         </a>
         <a href="" class="retina-logo">

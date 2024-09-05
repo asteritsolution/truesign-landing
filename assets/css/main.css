@@ -277,7 +277,7 @@ input.switch-toggle-flat:checked+label:after,
 .dark input.switch-toggle-round:checked+label::before,
 .dark input.switch-toggle-flat:checked+label,
 .dark input.switch-toggle-flat:checked+label::after {
-	background-color: #ED6926;
+	background-color: #388977;
 }
 
 .bg-color,
