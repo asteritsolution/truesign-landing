@@ -354,7 +354,9 @@
     <!-- Footer end -->
     </div>
 
-    <div id="gotoTop" class="icon-angle-up"></div>
+    <div id="gotoTop" class="fa-solid fa-arrow-up">
+    
+    </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="assets/js/plugins.js"></script>
     <script defer src="assets/js/functions.js"></script>

@@ -6,69 +6,9 @@
 <body class="stretched">
 
 
-    <style>
-        .grecaptcha-badge {
-            visibility: hidden;
-        }
-
-        .has-error .form-control {
-            width: 80% !important;
-        }
-
-        .has-error .text-danger {
-            font-family: 'Arial', sans-serif;
-            margin: 0px;
-            padding: 0px;
-            font-size: small;
-        }
-    </style>
-
 
     <div id="wrapper" class="clearfix">
 
-        <style>
-            html,
-            body {
-                background: #fff;
-            }
-
-            .loader {
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                width: 100vw;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: rgba(0, 0, 0, 0.8);
-                z-index: 9999;
-            }
-
-            .loader img {
-                width: 250px;
-            }
-
-            .loader-text-title {
-                color: #fff;
-                font-weight: 500;
-                line-height: 1.3;
-            }
-        </style>
-
-        <!-- Loader -->
-        <div class="loader">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="assets/images/logo/orangebooks-publication-logo@2x-white.png" alt="OrangeBooks" />
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <!-- Loader Ends -->
 
         <link as="style" rel="stylesheet preload prefetch" href="assets/css/bootstrap.css" crossorigin="anonymous" />
         <link as="style" rel="stylesheet preload prefetch" href="assets/css/style.css?_v=3" type="text/css" />
@@ -77,100 +17,24 @@
 
         <link as="style" rel="stylesheet preload prefetch" href="assets/css/main.css?_v=3" type="text/css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"
+            type="text/css" />
         <link as="style" rel="stylesheet preload prefetch" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
 
-        <style>
-            #pageloader {
-                top: 0px;
-                left: 0px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: rgba(255, 255, 255, 0.95);
-            }
-        </style>
 
 
-        <div id="pageloader" class="d-none">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-                        <defs>
-                            <filter id="ldio-2xcif6i7uph-filter" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="2.4000000000000004"></feGaussianBlur>
-                                <feComponentTransfer result="cutoff">
-                                    <feFuncA type="table" tableValues="0 0 0 0 0 0 1 1 1 1 1"></feFuncA>
-                                </feComponentTransfer>
-                            </filter>
-                        </defs>
-                        <g filter="url(#ldio-2xcif6i7uph-filter)">
-                            <g transform="translate(50 50)">
-                                <g transform="rotate(316.478)">
-                                    <circle cx="17" cy="0" r="4.16059" fill="#df1317">
-                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="4s" repeatCount="indefinite" begin="-0.25s"></animate>
-                                    </circle>
-                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="4s" repeatCount="indefinite" begin="0s"></animateTransform>
-                                </g>
-                            </g>
-                            <g transform="translate(50 50)">
-                                <g transform="rotate(281.956)">
-                                    <circle cx="17" cy="0" r="4.96117" fill="#e4934b">
-                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="2s" repeatCount="indefinite" begin="-0.2s"></animate>
-                                    </circle>
-                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="2s" repeatCount="indefinite" begin="-0.05s"></animateTransform>
-                                </g>
-                            </g>
-                            <g transform="translate(50 50)">
-                                <g transform="rotate(256.435)">
-                                    <circle cx="17" cy="0" r="6.00174" fill="#e2bb8b">
-                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1.3333333333333333s" repeatCount="indefinite" begin="-0.15s"></animate>
-                                    </circle>
-                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1.3333333333333333s" repeatCount="indefinite" begin="-0.1s"></animateTransform>
-                                </g>
-                            </g>
-                            <g transform="translate(50 50)">
-                                <g transform="rotate(239.912)">
-                                    <circle cx="17" cy="0" r="7.28235" fill="#e1e7e7">
-                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="1s" repeatCount="indefinite" begin="-0.1s"></animate>
-                                    </circle>
-                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="1s" repeatCount="indefinite" begin="-0.15s"></animateTransform>
-                                </g>
-                            </g>
-                            <g transform="translate(50 50)">
-                                <g transform="rotate(232.39)">
-                                    <circle cx="17" cy="0" r="7.99706" fill="#91bcc6">
-                                        <animate attributeName="r" keyTimes="0;0.5;1" values="3.5999999999999996;8.399999999999999;3.5999999999999996" dur="0.8s" repeatCount="indefinite" begin="-0.05s"></animate>
-                                    </circle>
-                                    <animateTransform attributeName="transform" type="rotate" keyTimes="0;1" values="0;360" dur="0.8s" repeatCount="indefinite" begin="-0.2s"></animateTransform>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="col-12 text-center">
-                    <h4>
-                        <small>We are submiting your form.</small> <br />
-                        <b>Please do not refresh this page.</b>
-                    </h4>
-                </div>
-
-            </div>
-        </div>
-
-        
-        
         <?php include('include/header.php') ?>
 
-        <link rel="stylesheet" href="assets/css/pricing-table.css" type="text/css" />
-        <section id="content">
+
+
+        <!-- Header end -->
+        <link rel="stylesheet" href="https://www.orangebooks.in/assets/css/pricing-table.css" type="text/css" />
+        <section id="content" style="background-color: #f0ece0; margin-bottom: -50px;">
             <div class="section m-0 overflow-hidden parallax align-items-center">
                 <div class="container clearfix center">
                     <div class="text-center">
                         <div class="content">
-                            <div class="badge badge-pill badge-default">Book Publishing Services</div>
                             <h1>Everything you need to become a<br>
                                 Best Seller Author!
                             </h1>
@@ -184,9 +48,9 @@
                     <div class="row m-0 p-0">
                         <div class="col-lg-3 m-0 p-0">
                             <div class="price-card">
-                                <div class="price-card--header">
-                                    <h4>Starter</h4>
-                                    <p class="pr-2 pl-2">Lets you get starterd. Recommended for small fiction/poerty books.</p>
+                                <div class="price-card--header" style="background-color: #388977;">
+                                    <h4 style="color:#fff;">Starter</h4>
+                                    <p class="pr-2 pl-2" style="color:#fff;">Lets you get starterd. Recommended for small fiction/poerty books.</p>
                                 </div>
                                 <div class="price-card--price">
                                     <div class="price-card--price-text">
@@ -522,16 +386,16 @@
                                     </ul>
                                 </div>
                                 <div class="price-card--cta">
-                                    <a class="button button-rounded button-small button-border" href="registration/new-author">Get Started</a>
+                                    <a class="button button-rounded button-small button-border" style="background-color: #388977;" href="#">Get Started</a>
                                 </div>
                                 <div class="price-card--mobile-features-toggle"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 m-0 p-0">
                             <div class="price-card">
-                                <div class="price-card--header">
-                                    <h4>Standard</h4>
-                                    <p class="pr-2 pl-2">Recommended for fiction/Non-fiction & poetry books. With Basic marketing.</p>
+                                <div class="price-card--header" style="background-color: #388977;">
+                                    <h4 style="color:#fff;">Standard</h4>
+                                    <p class="pr-2 pl-2" style="color:#fff;">Recommended for fiction/Non-fiction & poetry books. With Basic marketing.</p>
                                 </div>
                                 <div class="price-card--price">
                                     <div class="price-card--price-text">
@@ -883,18 +747,18 @@
                                     </ul>
                                 </div>
                                 <div class="price-card--cta">
-                                    <a class="button button-rounded button-small button-border" href="registration/new-author">Get Started</a>
+                                    <a class="button button-rounded button-small button-border" style="background-color: #388977;" href="#">Get Started</a>
                                 </div>
                                 <div class="price-card--mobile-features-toggle"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 m-0 p-0">
                             <div class="price-card price-card--hero">
-                                <div class="price-card--header">
-                                    <h4>Professional</h4>
-                                    <p class="pr-2 pl-2">Best for Academic/Thesis/Competitive books. Advance marketing included.</p>
+                                <div class="price-card--header" style="background-color: #388977;">
+                                    <h4 style="color:#fff;">Professional</h4>
+                                    <p class="pr-2 pl-2" style="color:#fff;">Best for Academic/Thesis/Competitive books. Advance marketing included.</p>
                                 </div>
-                                <div class="price-card--hero-text">
+                                <div class="price-card--hero-text" style="background-color: #388977;">
                                     Most Popular Plan
                                 </div>
                                 <div class="price-card--price">
@@ -1267,16 +1131,16 @@
                                     </ul>
                                 </div>
                                 <div class="price-card--cta">
-                                    <a class="button button-rounded" href="registration/new-author">Get Started</a>
+                                    <a class="button button-rounded" href="#" style="background-color: #388977;">Get Started</a>
                                 </div>
                                 <div class="price-card--mobile-features-toggle"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 m-0 p-0">
                             <div class="price-card">
-                                <div class="price-card--header">
-                                    <h4>Expert</h4>
-                                    <p class="pr-2 pl-2">Best for Academic/Thesis/Competitive books. Advance marketing included.</p>
+                                <div class="price-card--header" style="background-color: #388977;">
+                                    <h4 style="color:#fff;">Expert</h4>
+                                    <p class="pr-2 pl-2" style="color:#fff;">Best for Academic/Thesis/Competitive books. Advance marketing included.</p>
                                 </div>
                                 <div class="price-card--price">
                                     <div class="price-card--price-text only-yearly">
@@ -1666,7 +1530,7 @@
                                     </ul>
                                 </div>
                                 <div class="price-card--cta">
-                                    <a class="button button-rounded button-small button-border" href="registration/new-author">Get Started</a>
+                                    <a class="button button-rounded button-small button-border" href="#" style="background-color: #388977;">Get Started</a>
                                 </div>
                                 <div class="price-card--mobile-features-toggle"></div>
                             </div>
@@ -1677,153 +1541,18 @@
 
             </div>
         </section>
-        <section id="content" class="pt-lg-4">
-            <div id="section" style="background-color: #fdefe0;">
-                <div class="container p-lg-0">
-                    <div class="row justify-content-between align-items-center pt-4 pb-4 pt-lg-4 pb-lg-4 pt-md-4 pb-md-4">
-                        <div class="col-lg-7 col-md-7 mt-0 mt-md-4 pr-lg-6">
-                            <div class="feature-box fbox-plain fbox-sm">
-                                <div class="fbox-icon">
-                                    <i class="icon-money"></i>
-                                </div>
-                                <div class="fbox-content pb-4">
-                                    <h3>100% Author Royalty</h3>
-                                    <p class="text-normal">Earn 100% of the net profits on every book you sell. Our distributor network will enable you build an author brand, create growth-hacking strategies.</p>
-                                </div>
-                            </div>
-                            <div class="feature-box fbox-plain fbox-sm">
-                                <div class="fbox-icon">
-                                    <i class="icon-graph"></i>
-                                </div>
-                                <div class="fbox-content pb-4">
-                                    <h3>Monthly Sales & Payout</h3>
-                                    <p class="text-normal">Check how many books you have sold on a monthly basis instead of waiting for statements and get your royalty paid every month for every sold book.</p>
-                                </div>
-                            </div>
-                            <div class="feature-box fbox-plain fbox-sm mb-0">
-                                <div class="fbox-icon">
-                                    <i class="icon-line2-globe"></i>
-                                </div>
-                                <div class="fbox-content pb-4">
-                                    <h3>Worldwide Distribution</h3>
-                                    <p class="text-normal">We make your book available in upto 150+ countries as paperback and eBook. We are in partnership with largest global book distribution networks.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 mt-4 mt-md-0">
-                            <h2 class="ls0">Yet Not Convinced!</h2>
-                            <p class="text-muted mb-5 text-normal">Having more queries? Please register yourself to get a complete publishing consultancy right from writing to publishing the book worldwide or you may also check our FAQ section.</p>
-                            <div class="row" style="padding-bottom: 35px;">
-                                <div class="col-4">
-                                    <button onclick="window.location.href='registration/new-author';" class="button button-rounded button-large d-block m-0 center nott font-weight-semibold ls0">Register Now</button>
-                                </div>
-                                <div class="col-4">
-                                    <button onclick="window.location.href='frequently-asked-questions';" class="button button-rounded d-block button-border m-0 ml-5 center nott font-weight-semibold ls0" data-toggle="modal" data-target=".bs-example-modal-lg">Know More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script>
-            window.activeLink = 'menu-pricing';
-        </script>
 
 
-        <div id="free-consultation-form" class="d-none">
-            <div class="mx-auto p-4 free-consultation-container" style="max-width: 900px;">
-                <div class="row p-4 bg-white d-flex align-items-center justify-content-center rounded">
-                    <div class="col-md-6 center">
-                        <img src="assets/images/modal/free-consultation.png" alt="Free Consultation">
-                    </div>
-                    <div class="col-md-6 p-4">
-                        <h2 class="font-body mb-2">
-                            <small>Get Free Publishing</small> <br />
-                            Consultation Now!
-                        </h2>
-                        <p class="mb-4">
-                            Sign Up with us and get a free book publishing consultation from our experts.
-                        </p>
-
-                        <p class="mb-4 lead">
-                            <strong>Also, get a chance to win Upto<span style="color: #ED6926;"> 25% OFF</span> on all Publishing Plans.</strong>
-                        </p>
-
-                        <div class="form-widget">
-                            <!-- Free Consultation Form -->
-                            <form action="form-submit" id="FormToolsFreeConsultationLeadForm" class="row position-relative mb-0 disable-on-submit" enctype="multipart/form-data" method="post" accept-charset="utf-8" novalidate="novalidate">
-                                <input type="hidden" name="redirect_url" value="thankyou?utm_source=web&utm_medium=popup_lead_form&utm_campaign=free_consultation_modal" />
-                                <input type="hidden" name="key" value="785554226d8390fcf00af2c7ade1f911">
-                                <div class="form-process">
-                                    <div class="css3-spinner">
-                                        <div class="css3-spinner-scaler"></div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 input-group form-group">
-                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-line2-user"></i></span> </div>
-                                    <input type="text" name="name" id="focus-name" class="form-control required" value="" placeholder="Your Full Name" />
-                                </div>
-                                <div class="col-sm-12 input-group form-group">
-                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-line2-envelope"></i></span> </div>
-                                    <input type="email" name="email" id="email" class="form-control required" value="" placeholder="Your Email" />
-                                </div>
-                                <div class="col-sm-12 input-group form-group">
-                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-line2-call-out"></i></span> </div>
-                                    <input type="tel" name="phonenumber" pattern="[6-9]{1}[0-9]{9}" id="phonenumber" class="form-control required" value="" placeholder="Your Phone Number" />
-                                </div>
-                                <div class="col-sm-12 input-group form-group">
-                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-money"></i></span> </div>
-                                    <select class="form-control required" name="form-cf-74" id="form-cf-74">
-                                        <option value="">Your Publishing Budget</option>
-                                        <option value="Rs. 8000 - Rs. 10000">Rs. 8000 - Rs. 10,000</option>
-                                        <option value="Rs. 14,000 - Rs. 15,000">Rs. 14,000 - Rs. 15,000</option>
-                                        <option value="Rs. 20,000 - Rs. 25,000">Rs. 20,000 - Rs. 25,000</option>
-                                        <option value="Rs. 30,000 - Rs. 40,000">Rs. 30,000 - Rs. 40,000</option>
-                                        <option value="Above Rs. 50,000">Above Rs. 50,000</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-12 input-group form-group">
-                                    <div class="input-group-prepend"> <span class="input-group-text bg-transparent"><i class="icon-book2"></i></span> </div>
-                                    <select class="form-control required" name="form-cf-16" id="form-cf-16">
-                                        <option value="">Your Manuscript Status</option>
-                                        <option value="Want to start the process today.">Want to start the process today.</option>
-                                        <option value="Want to start the process within a week.">Want to start the process within a week.</option>
-                                        <option value="It will take a month to get ready.">It will take a month to get ready.</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <button data-sitekey="6LcMwNkaAAAAAB4cCv_E6s2OfiA0OyDUMmTTjNF1" data-callback="onSubmitFreeConsultationLeadForm" data-action="submit" class="btn bg-color text-white font-weight-medium btn-block py-2 mt-2 g-recaptcha">
-                                        Sign Up &amp; Get Your Discount Today!
-                                    </button>
-                                </div>
-                            </form> <a href="#" class="text-black-50 btn btn-link btn-block center" id="close-free-consultation-form">
-                                <small>
-                                    <u>No, I Don't Want Discount</u>
-                                </small>
-                            </a>
-
-                            <hr>
-                            <small>
-                                This site is protected by reCAPTCHA and the Google
-                                <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-                                <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-                            </small>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Footer Start -->
         <?php include('include/footer.php') ?>
         <!-- Footer end -->
-       
     </div>
 
-    <div id="gotoTop" class="icon-angle-up"></div>
+    <div id="gotoTop" class="fa-solid fa-arrow-up">
+    
+    </div>
+   
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="assets/js/plugins.js"></script>
     <script defer src="assets/js/functions.js"></script>

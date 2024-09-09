@@ -2286,7 +2286,7 @@ img.lazy:not([src]) {
 }
 
 .parallax {
-    background-color: transparent;
+    background-color: #f0ece0;
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;

@@ -1,0 +1,462 @@
+/* Pricing table style */
+
+#elite-pricing-card.price-card {
+	color: white;
+	position: relative;
+	padding: 30px 40px 10px 40px;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#elite-pricing-card.price-card .price-card--header {
+	padding: 0;
+	background-color: transparent;
+}
+
+#elite-pricing-card.price-card .price-card--header h4 {
+	font-size: 36px;
+	font-weight: 600;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #f0c328;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(top left, #efd100 0, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+	background-size: 1em 1em;
+	color: #fff1a3;
+}
+
+#elite-pricing-card.price-card #elite-pricing-card--desc {
+	padding-bottom: 25px;
+}
+
+#elite-pricing-card.price-card .price-card--features {
+	border-top: 1px solid #f0c328;
+}
+
+#elite-pricing-card.price-card ul.price-card--features--list {
+	padding: 0 11px;
+}
+
+#elite-pricing-card.price-card .price-card--features--item {
+	padding-bottom: 16px;
+}
+
+#elite-pricing-card.price-card .price-card--features--item:before {
+	color: #f0c328 !important;
+	left: -12px !important;
+}
+
+#elite-pricing-card.price-card .price-card--cta--button.btn {
+	background-color: #f0c328;
+	color: black;
+	margin: 0 auto;
+}
+
+#elite-pricing-card.price-card .price-card--cta--button.btn:hover {
+	background-color: white;
+}
+
+#elite-pricing-card--desc {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+/* - - - - - - - - - Tooltips - - - */
+
+.has-tooltip:not(.tooltip-disabled) {
+	cursor: help;
+	position: relative;
+}
+
+.has-tooltip:not(.tooltip-disabled):hover .tooltip-container {
+	display: block;
+}
+
+.has-tooltip .tooltip-container {
+	display: none;
+	position: absolute;
+	background-color: white;
+	z-index: 20;
+	bottom: calc(100% + 13px);
+	left: -10px;
+	right: -10px;
+	padding: 16px 20px;
+	border-radius: 8px;
+	box-shadow: 0 6px 55px -10px #777;
+}
+
+.has-tooltip .tooltip-container:after {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid white;
+	font-size: 0;
+	line-height: 0;
+	content: "";
+	position: absolute;
+	bottom: -10px;
+}
+
+.has-tooltip .tooltip-container h6 {
+	font-weight: 600;
+	font-size: 16px;
+	margin: 0px;
+}
+
+.has-tooltip .tooltip-container p {
+	color: #555;
+	margin-top: 4px;
+}
+
+
+/* - - - - - - - End Tooltips - - - */
+
+#pricing-container * {
+	box-sizing: border-box;
+}
+
+#pricing-container {
+	font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	max-width: 1320px;
+	margin: 0 auto 50px;
+	padding: 20px 20px;
+	justify-content: center;
+	line-height: 1;
+	color: #000;
+}
+
+
+/* Cards */
+
+#pricing-cards {
+	display: flex;
+	font-size: 14px;
+	padding-top: 2rem;
+}
+
+#pricing-container .price-card {
+	background-color: white;
+	font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+	display: block;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	transition: all 0.25s;
+	position: relative;
+	margin: 0 6px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+#pricing-container .price-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* - - - - - - - - - Header Section - - - */
+
+#pricing-container .price-card--header {
+	background-color: #fdefe0;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#pricing-container .price-card--header h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	color: #ED6926;
+	font-family: "Raleway", Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 700;
+}
+
+
+/* - - - - - - - - - Price Section - - - */
+
+#pricing-container .price-card--price {
+	text-align: center;
+	padding: 28px 0 6px 0;
+}
+
+#pricing-container .price-card--price-text {
+	font-size: 48px;
+}
+
+#pricing-container .price-card--price-number {
+	font-weight: 500;
+	opacity: 0.89;
+}
+
+.odometer div {
+	display: inline-block;
+}
+
+#pricing-container .price-card--price-number:before {
+	content: "â‚¹";
+	font-size: 24px;
+	top: -16px;
+	display: inline-block;
+	position: relative;
+}
+
+#pricing-container .price-card--price-number:after {
+	font-size: 12px;
+	display: inline-block;
+	color: grey;
+}
+
+#pricing-container .price-card--price-conditions {
+	padding: 14px 0;
+	color: #888;
+	line-height: 1.5;
+}
+
+#pricing-container .price-card--onboarding-fee {
+	color: #ED6926;
+}
+
+#pricing-container .price-card--onboarding-fee.has-fee {
+	color: #888;
+}
+
+
+/* - - - - - - - - - CTA Button Section - - - */
+
+#pricing-container .price-card--cta {
+	padding: 0 20px 24px;
+	text-align: center;
+}
+
+#pricing-container .price-card--cta--button.btn {
+	min-width: 20px;
+	display: block;
+	max-width: 183px;
+	margin: 0 auto;
+}
+
+
+/* - - - - - - - - - Features Section - - - */
+
+#pricing-container .price-card--features {
+	border-top: 1px solid #ddd;
+	padding: 16px 0 20px;
+}
+
+#pricing-container ul.price-card--features--list {
+	padding: 0 32px;
+	list-style: none;
+	margin: 0;
+}
+
+#pricing-container li.price-card--features--item {
+	margin: 8px 0;
+	padding-left: 8px;
+	line-height: 1.5;
+	position: relative;
+}
+
+#pricing-container li.price-card--features--item:not(.features-disabled):before {
+	content: "âœ“";
+	color: #ED6926;
+	display: block;
+	position: absolute;
+	left: -8px;
+}
+
+#pricing-container li.price-card--features--item.features-highlight {
+	/* 	font-weight: 600; */
+}
+
+#pricing-container li.price-card--features--item.features-disabled {
+	opacity: 0.4;
+	text-decoration: line-through;
+	/* 	text-decoration: line-through; */
+}
+
+
+/* - - - - - - - - - Hero Card Styles - - - */
+
+#pricing-container .price-card--hero {
+	margin: -38px 6px 0;
+	/* 	width:31%; */
+	z-index: 10;
+}
+
+#pricing-container .price-card--hero-text {
+	background-color: #ED6926;
+	height: 38px;
+	color: white;
+	line-height: 38px;
+	text-align: center;
+	font-weight: 600;
+}
+
+
+/* - - - - - - - - - Only Yearly Basic Styles - - - */
+
+#pricing-container .only-yearly {
+	position: relative;
+}
+
+#pricing-container .only-yearly .price-card--price-number {
+	transition: opacity 0.2s;
+}
+
+#pricing-container .only-yearly .only-yearly--text {
+	position: absolute;
+	top: -0.2em;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+#pricing-container .only-yearly .only-yearly--text span {
+	font-size: 14px;
+}
+
+#pricing-container .only-yearly.if-monthly .price-card--price-number {
+	opacity: 0;
+}
+
+#pricing-container .only-yearly.if-monthly .only-yearly--text {
+	display: block;
+}
+
+@media (max-width: 767px) {}
+
+
+/* - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - Media Queries - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 1280px) {
+	#pricing-container .price-card--price-text {
+		font-size: 32px;
+	}
+	#pricing-container .price-card--price-number:before {
+		top: -10px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 800px) {
+	#pricing-cards {
+		position: relative;
+		align-items: flex-start;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 800px;
+	}
+	#pricing-container {
+		margin-top: -60px;
+	}
+	#pricing-container .price-card {
+		max-width: 300px;
+		margin: 8px 8px;
+	}
+	#elite-pricing-container .price-card {
+		max-width: 300px;
+	}
+	#elite-pricing-sales-text {
+		max-width: 400px;
+		padding-right: 30px;
+	}
+	#pricing-container .price-card--header h4 {
+		padding: 2px;
+		font-size: 22px;
+	}
+	.button.button-rounded {
+		font-size: 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	#pricing-container {
+		margin-top: -60px;
+	}
+	#pricing-container .price-card--header h4 {
+		font-size: 32px;
+	}
+	#pricing-container .price-card--price-number {
+		font-weight: 700;
+	}
+	#pricing-cards {
+		display: block;
+		padding: 0 10px;
+	}
+	#pricing-container .price-card {
+		max-width: 450px;
+		margin: 0 auto 48px;
+	}
+	#pricing-container .price-card:hover {
+		transform: none;
+	}
+	#pricing-container .price-card-full-width {
+		display: block;
+	}
+	#pricing-container .price-card-full-width .price-card--features--list {
+		columns: 1;
+	}
+	#pricing-container .price-card--price {
+		padding: 28px 0 0;
+	}
+	#pricing-container .price-card--features {
+		margin: 26px 0 0 0;
+		padding-bottom: 0;
+	}
+	#pricing-container ul.price-card--features--list {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+	#pricing-container li.price-card--features--item.features-disabled {
+		display: none;
+	}
+	#pricing-container .price-card--mobile-features-toggle {
+		display: block;
+	}
+	/* Elite Pricing */
+	#elite-pricing-container {
+		display: block;
+		padding: 0 24px;
+	}
+	#elite-pricing-sales-text {
+		padding-right: 0;
+		padding-bottom: 32px;
+		padding-top: 0;
+		width: auto;
+		max-width: 360px;
+		margin: 0 auto;
+		text-align: left;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	#elite-pricing-card.price-card .price-card--mobile-features-toggle {
+		border-top: none;
+		color: #f0c328;
+		display: none;
+	}
+	#elite-pricing-card.price-card .price-card--features {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	#pricing-container .price-card {
+		max-width: 450px;
+		margin: 0 auto 36px;
+	}
+	#pricing-switch {
+		margin: 26px 0 36px;
+	}
+	#elite-pricing-card.price-card {
+		padding: 30px 20px 10px 20px;
+	}
+}
